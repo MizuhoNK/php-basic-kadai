@@ -20,7 +20,7 @@
             }
             //関数を定義する
             public function show_price(){
-                echo $this->price . '\n';
+                echo $this->price . '<br>';
             }
         }
         //クラス「Animal」を定義する
@@ -37,7 +37,7 @@
             }
             //関数を定義する
             public function show_height(){
-                echo $this->height . '\n';
+                echo $this->height . '<br>';
             }
         }
         //インスタンス化する
@@ -48,8 +48,9 @@
         echo '<br>';
         print_r($animal);
         echo '<br>';
-        echo $food->price .'<br>';
-        echo $animal->height . '<br>';
+        //関数を実行する
+        $food->show_price();
+        $animal->show_height();
         ?>
     </p>
     
